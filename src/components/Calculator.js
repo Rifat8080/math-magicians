@@ -1,69 +1,69 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './App.css';
+import React, { Component } from 'react';
+import Button from './Button';
+import calculate from '../logic/calculate';
 
-export function Display({ result }) {
-  return (
-    <div>
-      <h1>{result}</h1>
-    </div>
-  );
-}
+class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      operation: null,
+      total: 0,
+      next: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-Display.defaultProps = {
-  result: '0',
-};
+  handleClick = (e) => {
+    this.setState((state) => calculate(state, e.target.innerText));
+  };
 
-Display.propTypes = {
-  result: PropTypes.string,
-};
-
-export function ButtonBar() {
-  return (
-    <div>
-      <div className="button">
-        <div className="row">
-          <div className="number">AC</div>
-          <div className="number">+/-</div>
-          <div className="number">%</div>
-          <div className="orange">&#247;</div>
+  render() {
+    const { total, next, operation } = this.state;
+    return (
+      <div className="wrapper">
+        <div className="calculator">
+          <div className="screen">
+            {total}
+            {next}
+            {operation}
+          </div>
         </div>
-        <div className="row">
-          <div className="number">7</div>
-          <div className="number">8</div>
-          <div className="number">9</div>
-          <div className="orange">&#215;</div>
-        </div>
-        <div className="row">
-          <div className="number">4</div>
-          <div className="number">5</div>
-          <div className="number">6</div>
-          <div className="orange">-</div>
-        </div>
-        <div className="row">
-          <div className="number">1</div>
-          <div className="number">2</div>
-          <div className="number">3</div>
-          <div className="orange">+</div>
-        </div>
-        <div className="row">
-          <div className="zero">0</div>
-          <div className="decimal">.</div>
-          <div className="orange">=</div>
+        <div className="keyboard">
+          <Button onClick={this.handleClick}>AC</Button>
+          <Button onClick={this.handleClick}>+/-</Button>
+          <Button onClick={this.handleClick}>%</Button>
+          <Button onClick={this.handleClick} className="orange">
+            ÷
+          </Button>
+          <Button onClick={this.handleClick}>7</Button>
+          <Button onClick={this.handleClick}>8</Button>
+          <Button onClick={this.handleClick}>9</Button>
+          <Button onClick={this.handleClick} className="orange">
+            x
+          </Button>
+          <Button onClick={this.handleClick}>4</Button>
+          <Button onClick={this.handleClick}>5</Button>
+          <Button onClick={this.handleClick}>6</Button>
+          <Button onClick={this.handleClick} className="orange">
+            -
+          </Button>
+          <Button onClick={this.handleClick}>1</Button>
+          <Button onClick={this.handleClick}>2</Button>
+          <Button onClick={this.handleClick}>3</Button>
+          <Button onClick={this.handleClick} className="orange">
+            +
+          </Button>
+          <Button onClick={this.handleClick} id="zero">
+            0
+          </Button>
+          <Button onClick={this.handleClick}>.</Button>
+          <Button onClick={this.handleClick} className="orange">
+            =
+          </Button>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
-export function Button({ buttonName }) {
-  return (
-    <div>
-      <h1>{buttonName}</h1>
-    </div>
-  );
-}
-
-Button.propTypes = {
-  buttonName: PropTypes.string.isRequired,
-};
+export default Calculator;
