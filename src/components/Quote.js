@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import '../Styles/Layout.css';
 
 function Quotes() {
   const [fetchQuote, setQoute] = useState('new');
@@ -37,8 +38,7 @@ function Quotes() {
     };
   }, []);
   return (
-    <div className="col-lg-5 col-md-6 col-6 mt-5 align-self-center text-center">
-      <h1 className="text-success">Quote</h1>
+    <div className="quote-text">
       {hasError && <div>Something went wrong!</div>}
       {isLoading ? (
         <div className="text-success">Loading...</div>
