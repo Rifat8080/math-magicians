@@ -4,7 +4,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Math-Magicians-React-App ](#-math-magicians-react-app-)
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
@@ -86,7 +86,7 @@ npm test
 👤 **MoFuhidy**
 
 - GitHub: [@Mofuhidy](https://github.com/Mofuhidy)
-- LinkedIn: [@Mofuhidy](https://www.linkedin.com/in/mohammed-alfuhidy-b0081319a/)
+- LinkedIn: [@Mofuhidy](https://www.linkedin.com/in/mo-fuhidy/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
