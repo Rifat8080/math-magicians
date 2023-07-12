@@ -30,10 +30,12 @@ Math-Magicians-React-App is a simple calculation application build with react js
 
 ### Key Features <a name="key-features"></a>
 
+
 - Homepage
 - Calculator Page
 - Working Calculator
 - Qoutes Page
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
