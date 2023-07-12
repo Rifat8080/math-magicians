@@ -29,7 +29,10 @@ Math-Magicians-React-App is a simple calculation application build with react js
 
 ### Key Features <a name="key-features"></a>
 
-- React logo spinning
+- Homepage
+- Calculator Page
+- Working Calculator
+- Qoutes Page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,9 +77,9 @@ npm test
 
 👤 **Md Mahadi Hasan Rifat**
 
-- GitHub: [@githubhandle](https://github.com/Rifat8080)
-- Twitter: [@twitterhandle](https://twitter.com/mdmahadirifat98)
-- LinkedIn: [LinkedIn]([https://linkedin.com/in/linkedinhandle](https://www.linkedin.com/in/md-mahadi-hasan-rifat-8b7851265/))
+- GitHub: [Md Mahadi Hasan Rifat](https://github.com/Rifat8080)
+- Twitter: [Md Mahadi Hasan Rifat](https://twitter.com/mdmahadirifat98)
+- LinkedIn: [Md Mahadi Hasan Rifat](https://www.linkedin.com/in/md-mahadi-hasan-rifat-8b7851265/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
